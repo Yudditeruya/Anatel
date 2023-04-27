@@ -11,7 +11,7 @@ var config = {
 	host: 'dados.anatel.gov.br',//window.location.hostname"",
 	prefix: '/qap/',
 	port: 443,
-	isSecure: true//windows.location.protocol === "https:"
+	isSecure: true //windows.location.protocol === "https:"
 };
 //to avoid errors in dev-hub: you can remove this when you have added an app
 var app;
@@ -54,7 +54,7 @@ require( ["js/qlik"], function ( qlik ) {
 			} );
 			str += '<li><a data-cmd="create">Create</a></li>';
 			$( '#qbmlist' ).html( str ).find( 'a' ).on( 'click', function () {
-				var id = $( this ).data( 'id' );
+				var id = $( this ).data( 'id' );//
 				if ( id ) {
 					app.bookmark.apply( id );
 				} else {
