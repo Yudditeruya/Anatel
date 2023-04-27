@@ -8,10 +8,10 @@
 var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 
 var config = {
-	host: window.location.hostname,
-	prefix: prefix,
-	port: window.location.port,
-	isSecure: window.location.protocol === "https:"
+	host: 'dados.anatel.gov.br',//window.location.hostname"",
+	prefix: '/qap/',
+	port: 443,
+	isSecure: false
 };
 //to avoid errors in dev-hub: you can remove this when you have added an app
 var app;
