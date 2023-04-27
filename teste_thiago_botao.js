@@ -11,7 +11,7 @@ var config = {
 	host: 'dados.anatel.gov.br',//window.location.hostname"",
 	prefix: '/qap/',
 	port: 443,
-	isSecure: true //windows.location.protocol === "https:"
+	isSecure: false //windows.location.protocol === "https:"
 };
 //to avoid errors in dev-hub: you can remove this when you have added an app
 var app;
